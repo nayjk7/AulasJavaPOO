@@ -1,4 +1,4 @@
-package com.senai.exemplo.pessoa;
+package com.senai.exemplos.Pessoa;
 
 public class Endereco {
     String rua;

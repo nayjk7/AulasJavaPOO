@@ -1,4 +1,4 @@
-package com.senai.exemplo.pessoa;
+package com.senai.exemplos.Pessoa;
 
 public class Pessoa {
     String nome;
@@ -20,11 +20,11 @@ public class Pessoa {
     }
 
     public void falar(String frase) {
-        System.out.println("A pessoa falou: " + frase);
+        System.out.println(nome+ " falou: " + frase);
     }
 
     public void comer(String alimento) {
-        System.out.println("A pessoa comeu: " + alimento);
+        System.out.println(nome+ "comeu: " + alimento);
     }
 
     @Override
