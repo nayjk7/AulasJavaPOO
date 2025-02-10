@@ -4,27 +4,23 @@ public class Main {
     public static void main(String[] args) {
         Produto produto1 = new Produto(
                 "Arroz",
-                25.0,
-                100
+                15.0,
+                50
         );
         Produto produto2 = new Produto(
-                "Macarrão",
-                3.0,
-                250
-
-        );
-        Produto produto3 = new Produto(
                 "Feijão",
-                7.0,
-                150
-        );
+                7.99,
+                30
 
-        System.out.println("Digite a quantidade atualizada do estoque");
-    
+        );
+        produto1.atualizaEstoque(10);
 
         produto1.exibirDetalhes();
         produto2.exibirDetalhes();
-        produto3.exibirDetalhes();
+
+
+        System.out.println("Valor total do estoque de" +produto1.nome +": R$" +produto1.calcularValorEstoque());
+        System.out.println("Valor total do estoque de" +produto2.nome +": R$" +produto2.calcularValorEstoque());
 
     }
 
