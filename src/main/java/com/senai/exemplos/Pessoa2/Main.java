@@ -1,6 +1,9 @@
 package com.senai.exemplos.Pessoa2;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +21,7 @@ public class Main {
             System.out.println(pessoa);
         }
 
-        matrizPessoas[0].falar("Oii");
+        matrizPessoas[0].falar("oii");
         matrizPessoas[3] = new Pessoa("Victor", 30); //criar direto na matriz
 
         System.out.println(matrizPessoas[3].nome);
@@ -39,18 +42,30 @@ public class Main {
 
         System.out.println("tamanho da lista: " +listaPessoas.size());
         listar(listaPessoas);
-        listaPessoas.remove(pessoa1);
+
+
+        listaPessoas.set(0,pessoa2);
         listar(listaPessoas);
 
-        listaPessoas.set(0.pessoa2);
+        listaPessoas.add(0,pessoa3);
         listar(listaPessoas);
+
+
+        System.out.println("__________teste____________");
+
+        listaPessoas.forEach(System.out::println);
+
+        List<Pessoa> listaFiltrada = listaPessoas.stream().filter(p -> p.nome.toLowerCase().contains("J")).toList(); //retorna uma lista dos objetos específicos que vc está procurando na lista(filtragem)
+        System.out.println("----------teste filtro---------------");
+        listaFiltrada.forEach(System.out::println);
     }
 
     public static void listar(ArrayList<Pessoa> lista){
-        System.out.println("");
+        System.out.println("\n--------Lista--------");
         for (Pessoa pessoa: lista){
             System.out.println(pessoa);
         }
+        System.out.println("----------------------------");
 
     }
 }

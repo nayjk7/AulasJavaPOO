@@ -1,5 +1,5 @@
 package com.senai.exemplos.Pessoa2;
-
+//aula 14/02/24
 public class Pessoa {
     String nome;
     int idade;
@@ -9,7 +9,7 @@ public class Pessoa {
         this.idade = idade;
     }
     public void falar (String frase){
-        System.out.println(nome+ "falou:" +frase);
+        System.out.println(nome+ "falou: " +frase);
 
     }
 
