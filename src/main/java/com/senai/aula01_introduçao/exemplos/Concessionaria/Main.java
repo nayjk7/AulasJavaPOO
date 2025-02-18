@@ -1,4 +1,4 @@
-package com.senai.exemplos.Concessionaria;
+package com.senai.aula01_introduçao.exemplos.Concessionaria;
 
 public class Main {
     public static void main(String[] args) {

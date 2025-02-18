@@ -1,4 +1,4 @@
-package com.senai.Exercícios.CadastroProduto;
+package com.senai.Exercícios_Aula01.CadastroProduto;
 
 public class Main {
     public static void main(String[] args) {
