@@ -37,6 +37,9 @@ public class Produto {
         } else {
             System.out.println("O preço do produto não pode ser negativo");
         }
+        }
+        public void exibirProduto(){
+            System.out.println("Produto: " + nome + "| Preço: R$" + preco);
     }
 
     @Override

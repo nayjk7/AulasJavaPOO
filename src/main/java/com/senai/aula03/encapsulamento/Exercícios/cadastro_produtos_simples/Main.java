@@ -10,6 +10,12 @@ public class Main {
         System.out.println(produto1);
         System.out.println(produto2);
 
-        produto1.se
+        produto1.setPreco(-10);
+
+        produto1.setNome("feijão");
+        produto1.setPreco(10);
+
+        produto1.exibirProduto();
+
     }
 }
