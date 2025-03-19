@@ -1,9 +1,12 @@
 package com.senai.Exercícios_Aula04.SistemaFuncionários;
 
-public class Coordenador extends Funcionário{
-    private String equipeProfessores;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Coordenador(String nome, double salario, String equipeProfessores) {
+public class Coordenador extends Funcionário{
+    private List<Professor> equipeProfessores;
+
+    public Coordenador(String nome, double salario, List<Professor> equipeProfessores) {
         super(nome, salario);
         this.equipeProfessores = equipeProfessores;
     }
@@ -11,6 +14,12 @@ public class Coordenador extends Funcionário{
     @Override
     void exibirDetalhes() {
         super.exibirDetalhes();
-        System.out.println("Equipe de professores" + equipeProfessores);
+        System.out.println("Equipe de professores:");
+       for (Professor professor : equipeProfessores) {
+           System.out.println("-" + professor.nome + "(Disciplina:" + professor.disciplina + ")");
+
+        }
+
     }
 }
+

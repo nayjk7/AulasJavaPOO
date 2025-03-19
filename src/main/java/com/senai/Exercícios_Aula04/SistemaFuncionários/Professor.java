@@ -3,15 +3,12 @@ package com.senai.Exercícios_Aula04.SistemaFuncionários;
 import java.util.ArrayList;
 
 public class Professor extends Funcionário {
-    private String disciplina;
+    String disciplina;
 
-     private static ArrayList<Professor> ListaDeProfessores = new ArrayList<>();
 
      public Professor(String nome, double salario, String disciplina) {
             super(nome, salario);
             this.disciplina = disciplina;
-
-        ListaDeProfessores.add(this);
 
     }
 

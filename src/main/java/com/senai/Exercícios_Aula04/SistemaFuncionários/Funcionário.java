@@ -1,7 +1,7 @@
 package com.senai.Exercícios_Aula04.SistemaFuncionários;
 
 public class Funcionário {
-    private String nome;
+    String nome;
     private double salario;
 
     public Funcionário(String nome, double salario) {
@@ -25,6 +25,6 @@ public class Funcionário {
         this.salario = salario;
     }
     void exibirDetalhes(){
-        System.out.println("Nome:" + nome + ", Salário: R$" + salario);
+        System.out.println("Nome:" + nome + ", \nSalário: R$" + salario);
     }
 }
