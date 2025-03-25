@@ -11,6 +11,6 @@ public class PacienteParticular extends Paciente {
     @Override
     void exibirDetalhes() {
         super.exibirDetalhes();
-        System.out.println("Custo consulta" + custoConsulta);
+        System.out.println("Custo consulta: R$" + custoConsulta);
     }
 }
