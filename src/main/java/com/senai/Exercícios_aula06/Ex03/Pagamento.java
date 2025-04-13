@@ -9,7 +9,6 @@ public abstract class Pagamento {
         this.valor = valor;
     }
 
-    // Etapas comuns (métodos concretos)
     public void autenticarUsuario() {
         System.out.println("Autenticando usuário: " + usuario);
     }

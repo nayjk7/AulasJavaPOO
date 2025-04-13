@@ -1,5 +1,9 @@
 package com.senai.Exercícios_aula05.SistemaDeRelatórios;
 
-public class CSV {
+public class CSV extends Relatorio{
+    @Override
+    public void gerar() {
+        System.out.println("Gerando relatório em formato CSV...");
+    }
 
 }

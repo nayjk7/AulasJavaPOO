@@ -7,7 +7,6 @@ public class BicicletaEntrega extends VeiculoEntrega {
 
     @Override
     public double calcularTempoEntrega() {
-        // Bicicleta tem limite de velocidade
         double velocidadeMaxima = Math.min(velocidadeAtual, 25);
         return distanciaDestino / velocidadeMaxima;
     }
