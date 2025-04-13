@@ -1,41 +1,31 @@
 package com.senai.Exercícios_Aula02.GerenciadorTarefas;
 
-import java.util.Scanner;
-
 public class Tarefa {
-    String nomeTarefa;
-    boolean status;
+    private String nomeTarefa;
+    private boolean concluida;
 
-    public Tarefa(String nomeTarefa, boolean status) {
+    public Tarefa(String nomeTarefa) {
         this.nomeTarefa = nomeTarefa;
-        this.status = status;
+        this.concluida = false;
     }
 
-    public static void adicionarTarefa() {
-        System.out.println("Adicione a tarefa");
-        Scanner input = new Scanner(System.in);
-        System.out.println("Ver tarefa");
-        String nomeTarefa = input.nextLine();
-        System.out.println(nomeTarefa);
-
+    public String getNomeTarefa() {
+        return nomeTarefa;
     }
-    public static void listarTarefas() {
 
+    public boolean isConcluida() {
+        return concluida;
     }
-    public static void marcarTarefaConcluída() {
 
-    }
-    public static void removerTarefa(){
-
+    public void concluir() {
+        this.concluida = true;
     }
 
     @Override
     public String toString() {
-        return "Tarefa{" +
-                "nomeTarefa='" + nomeTarefa + '\'' +
-                ", status=" + status +
-                '}';
+        return nomeTarefa + "- [" + (concluida? "concluída" : "pendente" + "]");
     }
 }
+
 
 
