@@ -7,5 +7,21 @@ public class Operador extends Usuario{
             super(nome, id);
             this.setor = setor;
         }
+
+    public String getSetor() {
+        return setor;
     }
+
+    public void setSetor(String setor) {
+        this.setor = setor;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Id : %d, Nome: %s, Setor: %s",
+                super.getId(), super.getNome(), setor
+        );
+    }
+}
+
 
